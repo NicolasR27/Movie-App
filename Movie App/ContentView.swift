@@ -10,12 +10,39 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            VStack {
+                NavigationLink(destination:(PosterView)()){
+                    PosterView()
+                       
+                        
+                    Text("How to train your Dragon 3")
+                        .font(.title)
+                        .fontWeight(.semibold)
+                }
+            }
+            
+           
+        }
+           
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct PosterView: View {
+    var body: some View {
+        Image("poster")
+            .renderingMode(.original)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .cornerRadius(12)
+            .padding()
+            
     }
 }
