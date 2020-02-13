@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Movie App
-//
-//  Created by Nicolas Rios on 2/12/20.
-//  Copyright © 2020 Nicolas Rios. All rights reserved.
-//
 
 import SwiftUI
 
@@ -12,19 +5,19 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination:(PosterView)()){
+                NavigationLink(destination:(DetailView)()){
                     PosterView()
-                       
-                        
-                    Text("How to train your Dragon 3")
+                    
+                    
+                    Text("How to Train Your Dragon 3")
                         .font(.title)
                         .fontWeight(.semibold)
                 }
             }
             
-           
+            
         }
-           
+        
         
     }
 }
@@ -43,6 +36,6 @@ struct PosterView: View {
             .aspectRatio(contentMode: .fit)
             .cornerRadius(12)
             .padding()
-            
+        
     }
 }
