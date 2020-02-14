@@ -12,7 +12,7 @@ struct ContentView: View {
                     Text("How to Train Your Dragon 3")
                         .font(.title)
                         .fontWeight(.semibold)
-                }
+            }
             }
             
             
